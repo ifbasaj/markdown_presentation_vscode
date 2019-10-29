@@ -1,4 +1,8 @@
 {
     "markdown-pdf.orientation": "landscape",   
-    "git.path":"...PortableGit\\bin\\git.exe"
+    "markdown-preview-enhanced.previewTheme": "medium.css",
+    "git.path": "...PortableGit\\bin\\git.exe",
+    "markdown.styles": [
+        "./.vscode/styles.css"
+    ]
 }

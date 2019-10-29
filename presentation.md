@@ -57,7 +57,7 @@ D --> E
 ```mermaid
 graph TD
 A(Bloco 1) --> C(Bloco 2)
-C --> D{Rhombus}
+C --> D{Condição <br />complexa}
 
     D --S--> E(Bloco 3)
     E --> I(Bloco 4)
@@ -68,5 +68,10 @@ C --> D{Rhombus}
     F-->G(( ))
 
 G(( ))-->H(Bloco 6)
+
+classDef orange fill:#f96,stroke:#333,stroke-width:2px;
+class D orange
+classDef black fill:#000;
+class G black
 ```
 
