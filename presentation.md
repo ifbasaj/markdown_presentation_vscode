@@ -58,10 +58,15 @@ D --> E
 graph TD
 A(Bloco 1) --> C(Bloco 2)
 C --> D{Rhombus}
-D --S--> E(Bloco 4)
-D --N--> F(Bloco 5)
-E-->G(( ))
-F-->G(( ))
+
+    D --S--> E(Bloco 3)
+    E --> I(Bloco 4)
+    I-->G(( ))
+
+
+    D --N--> F(Bloco 5)
+    F-->G(( ))
+
 G(( ))-->H(Bloco 6)
 ```
 
