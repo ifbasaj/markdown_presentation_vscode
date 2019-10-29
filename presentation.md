@@ -1,17 +1,27 @@
-[[TOC]]
+
+<!-- TOC -->
+
+- [Lógica de Programação](#lógica-de-programação)
+    - [Introdução](#introdução)
+        - [Evolução dos computadores](#evolução-dos-computadores)
+        - [Sistema computacional](#sistema-computacional)
+        - [Hardware](#hardware)
+        - [Exemplo Fluxo](#exemplo-fluxo)
+
+<!-- /TOC -->
 
 <div style="page-break-after: always;"></div>
 
-# Lógica de Programação
+# 1. Lógica de Programação
 
-## Introdução
+## 1.1. Introdução
 
-### Evolução dos computadores
+### 1.1.1. Evolução dos computadores
 
 - Desde o ábaco, passando pela maquina de somar de Pascal até os equipamentos mais modernos o princípio de funcionamento é o mesmo.
 	- Em todos, sem exceção, é possível considerar três subsistemas hardware, software e peopleware.
 
-### Sistema computacional
+### 1.1.2. Sistema computacional
 
 ```mermaid
 graph LR
@@ -29,7 +39,7 @@ D --> E
 
 <div style="page-break-after: always;"></div>
 
-### Hardware
+### 1.1.3. Hardware
 
 - Todo computador é composto de duas pares essenciais para o seu funcionamento: hardware e software. Sem uma dessas partes, ele não pode funcionar.
 - Para entender melhor o que isso significa, pense em um carro, composto de uma parte mecânica e outra elétrica. 
@@ -43,7 +53,7 @@ D --> E
   
 <div style="page-break-after: always;"></div>
   
-#### Exemplo Fluxo
+### 1.1.4. Exemplo Fluxo
 ```mermaid
 graph TD
 A(Bloco 1) --> C(Bloco 2)

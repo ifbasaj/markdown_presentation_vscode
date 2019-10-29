@@ -1,6 +1,4 @@
 {
-    "markdown-pdf.orientation": "landscape",
-    "markdownAutoTOC.headerContent": "Conteúdo",
-    "markdownAutoTOC.maximumHeadingLevel": 3,
+    "markdown-pdf.orientation": "landscape",   
     "git.path":"...PortableGit\\bin\\git.exe"
 }

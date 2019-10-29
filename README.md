@@ -4,7 +4,8 @@
 
 Instalar as extenções abaixo
 https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian
-https://marketplace.visualstudio.com/items?itemName=wibblemonkey.markdown-auto-toc
+https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf
+https://marketplace.visualstudio.com/items?itemName=huntertran.auto-markdown-toc
 https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid
 
 
