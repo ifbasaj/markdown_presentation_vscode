@@ -2,7 +2,7 @@
 
 ## Criar apresentações utilizando markdown e plugins do vscode
 
-Instalar as extenções abaixo
+Instalar as extensões abaixo
 https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian
 https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf
 https://marketplace.visualstudio.com/items?itemName=huntertran.auto-markdown-toc
