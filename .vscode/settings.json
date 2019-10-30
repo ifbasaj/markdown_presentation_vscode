@@ -1,8 +1,5 @@
 {
-    "markdown-pdf.orientation": "landscape",   
     "markdown-preview-enhanced.previewTheme": "medium.css",
-    "git.path": "...PortableGit\\bin\\git.exe",
-    "markdown.styles": [
-        "./.vscode/styles.css"
-    ]
+    "cSpell.language": "en,pt-BR",
+    "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm;\"> <span>Lógica de Programação</span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; \"> <span class='date'></span></div>",        
 }

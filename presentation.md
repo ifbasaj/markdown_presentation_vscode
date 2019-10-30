@@ -1,4 +1,3 @@
-
 <!-- TOC -->
 
 - [Lógica de Programação](#lógica-de-programação)
@@ -47,7 +46,7 @@ D --> E
 
 
 <p align="center">
-    <img src="https://i.stack.imgur.com/onsOR.jpg">
+    <img src="https://i.stack.imgur.com/onsOR.jpg"/><br/>
     <b>Figura 1</b>  the new keyboard..wonder if it's good
 </p>
   

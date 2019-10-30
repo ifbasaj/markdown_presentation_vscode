@@ -3,10 +3,16 @@
 ## Criar apresentações utilizando markdown e plugins do vscode
 
 Instalar as extensões abaixo
+
 https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian
+
 https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf
+
 https://marketplace.visualstudio.com/items?itemName=huntertran.auto-markdown-toc
+
 https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid
+
+https://marketplace.visualstudio.com/items?itemName=hbrok.markdown-preview-bitbucket (TOC)
 
 
 para utilizar o git fazer o download da versão portable : https://git-scm.com/download/win
@@ -18,3 +24,6 @@ gerar sequencia no VSCode
 Emmet: Wrap Individual Lines with Abbreviation  
 p $*/
 
+"markdown-pdf.orientation": "landscape",   
+"git.path": "...PortableGit\\bin\\git.exe",
+    
