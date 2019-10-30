@@ -157,4 +157,22 @@ Fimalgoritmo
 
 <div style="page-break-after: always;"></div>
 
-2.  Ler três valores e apresentá-los dispostos em ordem crescente. Utilizar os conceitos de propriedade distributiva (exercício "g" do capítulo 3) e troca de valores entre variáveis (exercício "f" do capítulo 3).
+1. Ler dois valores para as variáveis A e B, e efetuar a troca dos valores de forma que a variável A passe a possuir o valor da variável Bea variável B passe a possuir o valor da variável A. Apresentar os valores trocados. 
+
+```mermaid
+graph TD
+B1(Escreva informe o primeiro numero) --> B2(Leia A)
+B2 --> B3(Escreva informe o segundo numero)
+B3 --> B4(Leia B)
+
+B4 --> B5(temp <- A)
+B5 --> B6(A <- B)
+B6 --> B7(B <- temp)
+
+B7 --> B8(Escreva A)
+B8 --> B9(Escreva B)
+```
+
+1. Ler quatro valores numéricos inteiros e apresentar o resultado das adições e das multiplicações utilizando-se o conceito de propriedade distributiva para a máxima combinação possível entre as quatro variáveis. Considerando-se o uso das variáveis A, B, C e D, deverá ser efetuada seis adições e seis multiplicações, ou seja, de forma geral deverá ser combinada a variável A com a variável B, a variável A com a variável C, a variável A com a variável D. Depois será necessário à variável B com a variável Ce a variável B com a variável De por fim a variável C será combinada com a variável D. 
+
+1.  Ler três valores e apresentá-los dispostos em ordem crescente. Utilizar os conceitos de propriedade distributiva (exercício "g" do capítulo 3) e troca de valores entre variáveis (exercício "f" do capítulo 3).
