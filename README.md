@@ -13,3 +13,8 @@ para utilizar o git fazer o download da versão portable : https://git-scm.com/d
 
 definir a configuração "git.path" para o aquivo {PATH}/bin/git.exe
 
+gerar sequencia no VSCode
+
+Emmet: Wrap Individual Lines with Abbreviation  
+p $*/
+
