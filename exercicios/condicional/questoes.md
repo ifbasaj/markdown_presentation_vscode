@@ -22,18 +22,7 @@ B12(menor <- num1)
 B1 --> B10
 B10 --> B11
 B11 --> B12 
-
-B12 --> T10{num1 > maior}
-    T10 --S--> B15(maior <-num1 )
-    T10 --N--> F10(( ))
-    B15 --> F10(( ))
-
-F10(( )) --> T11{num1 < menor}
-    T11 --S--> B16(menor <-num1 )
-    T11 --N--> F11(( ))
-    B16 --> F11(( ))
-
-F11(( )) --> B2
+B12 --> B2 
 B2 --> B3
 B3 --> T20{num2 > maior}
     T20 --S--> B25(maior <-num2 )
@@ -91,10 +80,7 @@ class T10,T11,T20,T21,T30,T31,T40,T41,T50,T51 orange
 classDef black fill:#000;
 class F10,F11,F20,F21,F30,F31,F40,F41,F50,F51 black
 ```
-
 <div style="page-break-after: always;"></div>
-
-código 
 
 ```php
 Algoritmo "maiormenor"
@@ -172,6 +158,9 @@ B6 --> B7(B <- temp)
 B7 --> B8(Escreva A)
 B8 --> B9(Escreva B)
 ```
+
+<div style="page-break-after: always;"></div>
+
 3. Ler três valores e apresentá-los dispostos em ordem crescente. Utilizar os conceitos de troca de valores entre variáveis (exercício 2).
 
 ```mermaid
