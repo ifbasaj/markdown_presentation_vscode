@@ -1,13 +1,9 @@
-<!-- TOC -->
-
-- [Lógica de Programação](#lógica-de-programação)
-    - [Introdução](#introdução)
-        - [Evolução dos computadores](#evolução-dos-computadores)
-        - [Sistema computacional](#sistema-computacional)
-        - [Hardware](#hardware)
-        - [Exemplo Fluxo](#exemplo-fluxo)
-
-<!-- /TOC -->
+- [1. Lógica de Programação](#1-l%c3%b3gica-de-programa%c3%a7%c3%a3o)
+  - [1.1. Introdução](#11-introdu%c3%a7%c3%a3o)
+    - [1.1.1. Evolução dos computadores](#111-evolu%c3%a7%c3%a3o-dos-computadores)
+    - [1.1.2. Sistema computacional](#112-sistema-computacional)
+    - [1.1.3. Hardware](#113-hardware)
+    - [1.1.4. Exemplo Fluxo](#114-exemplo-fluxo)
 
 <div style="page-break-after: always;"></div>
 
