@@ -18,6 +18,8 @@ https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-mark
 
 https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
 
+https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+
 
 para utilizar o git fazer o download da versão portable : https://git-scm.com/download/win
 
