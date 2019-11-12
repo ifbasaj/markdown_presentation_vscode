@@ -3,8 +3,10 @@
       "ms-ceintl.vscode-language-pack-pt-br",
       "streetsidesoftware.code-spell-checker-portuguese-brazilian",
       "hbrok.markdown-preview-bitbucket", 
-      "bierner.markdown-mermaid",
       "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
-      "yzane.markdown-pdf"
+      "bierner.markdown-mermaid",
+      "jebbs.markdown-extended",
+      "tomoki1207.pdf",
+      "goessner.mdmath"
     ]
   }
