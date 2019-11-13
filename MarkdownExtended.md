@@ -178,9 +178,39 @@ warning text
 :::::
 
 
+::::: container
+:::: row align-items-center
+::: col
+
+<p align="center">
+    <img src="https://i.stack.imgur.com/onsOR.jpg"/><br/>
+    <b>Figura 1</b>  the new keyboard..wonder if it's good
+</p>
+:::
+::: col
+```mermaid
+graph TD
+A(Bloco 1) --> C(Bloco 2)
+C --> D{Condição <br/> complexa}
+
+    D --S--> E(Bloco 3)
+    E --> I(Bloco 4)
+    I-->G(( ))
 
 
+    D --N--> F(Bloco 5)
+    F-->G(( ))
 
+G(( ))-->H(Bloco 6)
+
+classDef orange fill:#f96,stroke:#333,stroke-width:2px;
+class D orange
+classDef black fill:#000;
+class G black
+```
+:::
+::::
+:::::
 
  - A parte física do sistema computador denominamos hardware. 
  - Aos programas, essenciais à sua conveniente utilização na solução dos problemas, chamamos software. 
