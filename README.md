@@ -30,6 +30,10 @@ gerar sequencia no VSCode
 Emmet: Wrap Individual Lines with Abbreviation  
 p $*/
 
+Emmet
+p*10{$}
+
+
 "markdown-pdf.orientation": "landscape",   
 "git.path": "...PortableGit\\bin\\git.exe",
     
