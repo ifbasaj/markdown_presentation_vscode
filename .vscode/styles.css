@@ -1,2 +1,8 @@
-tr:nth-child(even) {background: #CCC}
-tr:nth-child(odd) {background: #FFF}
+tr:nth-child(even) {
+    background: #f6f8fa;
+    border-top: 1px solid #c6cbd1
+}
+tr:nth-child(odd) {
+    background: #FFF;
+    border-top: 1px solid #c6cbd1
+}

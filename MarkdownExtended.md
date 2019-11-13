@@ -1,4 +1,5 @@
 ---
+title: Teste Titulo
 puppeteer:
     pdf:
         format: A4
@@ -13,7 +14,15 @@ puppeteer:
         quality: 90
         fullPage: true
 ---
-contents goes here...
+
+
+TEXTO TOPO{style="margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
+
+TEXTO CENTRO{style="margin-top: 12em;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
+
+TEXTO BAIXO{style="margin-top: 12em;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
+
+<div style="page-break-after: always;"></div>
 
 [[TOC]]
 
@@ -226,3 +235,32 @@ class G black
 $$ A = a \times b $$ (1)
 
 $$ A = a \times b $$ (3.2)
+
+
+| Command                       | Keyboard Shortcut          |
+| ----------------------------- | -------------------------- |
+| Format: Toggle Bold           | [[Ctrl+B]]|
+| Format: Toggle Italics        | [[Ctrl+I]]|
+| Format: Toggle Underline      | [[Ctrl+U]]|
+| Format: Toggle Mark           | [[Ctrl+M]]|
+| Format: Toggle Strikethrough  | [[Alt+S]]|
+| Format: Toggle Code Inline    | [[Alt+`]]|
+| Format: Toggle Code Block     | [[Alt+Shift+`]]|
+| Format: Toggle Block Quote    | [[Ctrl+Shift+Q]]|
+| Format: Toggle Superscript    | [[Ctrl+Shift+U]]|
+| Format: Toggle Subscript      | [[Ctrl+Shift+L]]|
+| Format: Toggle Unordered List | [[Ctrl+L, Ctrl+U]]|
+| Format: Toggle Ordered List   | [[Ctrl+L, Ctrl+O]]|
+| Table: Paste as Table         | [[Ctrl+Shift+T, Ctrl+Shift+P]]|
+| Table: Format Table           | [[Ctrl+Shift+T, Ctrl+Shift+F]]|
+| Table: Add Columns to Left    | [[Ctrl+Shift+T, Ctrl+Shift+L]]|
+| Table: Add Columns to Right   | [[Ctrl+Shift+T, Ctrl+Shift+R]]|
+| Table: Add Rows Above         | [[Ctrl+Shift+T, Ctrl+Shift+A]]|
+| Table: Add Row Below          | [[Ctrl+Shift+T, Ctrl+Shift+B]]|
+| Table: Delete Rows            | [[Ctrl+Shift+D, Ctrl+Shift+R]]|
+| Table: Delete Columns         | [[Ctrl+Shift+D, Ctrl+Shift+C]]|
+| Table: Move Columns Left      | [[Alt+←]]|
+| Table: Move Columns Right     | [[Alt+→]]|
+
+
+
