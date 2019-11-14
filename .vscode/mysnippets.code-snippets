@@ -1,0 +1,40 @@
+{
+	// Place your workspace markdown_presentation_vscode snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"details to collapse": {
+		"prefix": "det",
+		"body": [
+		   "<details open>",
+		   "<summary>Exemplo Fluxo</summary>",
+		   "```mermaid",
+		   "graph TD",
+		   "A(Bloco 1) --> D{Condição <br/> de parada}",
+		   "	D --S--> E(Bloco 2)",
+		   "	E --> D",
+		   "	D --N--> G(( ))",
+		   "G(( ))-->H(Bloco 3)",
+		   "classDef orange fill:#f96,stroke:#333,stroke-width:2px;",
+		   "class D orange",
+		   "classDef black fill:#000;",
+		   "class G black",
+		   "```",
+		   "</details> "
+		],
+		"description": "details"
+	},
+	"pagebreak": {
+		"prefix": "pb",
+		"body": [
+		   "<div style=\"page-break-after: always;\"></div>"
+		],
+		"description": "page-break-after"
+	}
+
+	
+}
+

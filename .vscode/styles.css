@@ -1,11 +1,11 @@
 tr:nth-child(even) {
-    background: #f6f8fa;
-    border-top: 1px solid #c6cbd1
+    background: #f8f8f8;
+    border-top: 1px solid #ccc
 }
 
 tr:nth-child(odd) {
     background: #FFF;
-    border-top: 1px solid #c6cbd1
+    border-top: 1px solid #ccc
 }
 
 /*!

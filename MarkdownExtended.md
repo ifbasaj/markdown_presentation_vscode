@@ -16,11 +16,11 @@ puppeteer:
 ---
 
 
-TEXTO TOPO{style="margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
+TEXTO TOPO{style="font-size: 2pc;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
 
-TEXTO CENTRO{style="margin-top: 12em;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
+TEXTO CENTRO{style="font-size: 2pc;margin-top: 7em;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
 
-TEXTO BAIXO{style="margin-top: 12em;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
+TEXTO BAIXO{style="font-size: 2pc;margin-top: 7em;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
 
 <div style="page-break-after: always;"></div>
 
@@ -187,7 +187,9 @@ warning text
     <b>Figura 1</b>  the new keyboard..wonder if it's good
 </p>
 :::
-::: col
+:::  col
+<div style="zoom:50%">
+
 ```mermaid
 graph TD
 A(Bloco 1) --> C(Bloco 2)
@@ -208,6 +210,7 @@ class D orange
 classDef black fill:#000;
 class G black
 ```
+</div>
 :::
 ::::
 :::::
@@ -240,6 +243,11 @@ class G black
 
   
 ### 1.1.4. Exemplo Fluxo
+
+<details open>
+<summary>Exemplo Fluxo</summary>
+
+
 ```mermaid
 graph TD
 A(Bloco 1) --> C(Bloco 2)
@@ -261,7 +269,7 @@ classDef black fill:#000;
 class G black
 ```
 
-
+</details> 
 $$ A = a \times b $$ (1)
 
 $$ A = a \times b $$ (3.2)
@@ -291,6 +299,5 @@ $$ A = a \times b $$ (3.2)
 | Table: Delete Columns         | [[Ctrl+Shift+D, Ctrl+Shift+C]]|
 | Table: Move Columns Left      | [[Alt+←]]|
 | Table: Move Columns Right     | [[Alt+→]]|
-
 
 

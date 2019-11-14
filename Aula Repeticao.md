@@ -59,9 +59,11 @@ class G black
 
 <div style="page-break-after: always;"></div>
 
-Supondo um programa que deve verificar se a cada um dos 3 número informados  é par ou impar.
+Supondo um programa que deve verificar se a cada um dos 3 número informados é par ou impar.
 
 Como seria esse algoritmo?
+<details open>
+<summary>Exemplo Fluxo</summary>
 
 ```mermaid
 graph TD
@@ -104,7 +106,7 @@ class D,D1 orange
 classDef black fill:#000;
 class G,G1 black
 ```
-
+</details>
 <div style="page-break-after: always;"></div>
 
 ## Enquanto
@@ -123,7 +125,8 @@ Esta estrutura repete uma sequência de comandos enquanto uma determinada condi�
 
 1. Determinar a quantidade de divisores de um número inteiro qualquer
 
-<div style="page-break-after: always;"></div>
+<details open>
+<summary>Exemplo código</summary>
 
 ```php
 leia(numero)
@@ -137,7 +140,7 @@ divisor <- divisor + 1
 fimenquanto
 escreva(quantidadeDivisor)
 ```
-
+</details>
 <div style="page-break-after: always;"></div>
 
 ## Repita
@@ -156,7 +159,8 @@ Esta estrutura repete uma sequência de comandos até uma determinada condição
 
 1. Ler uma quantidade indefinida de números e  escrever a média aritmética. A leitura deve parar quando o número 0 for informado.
 
-<div style="page-break-after: always;"></div>
+<details open>
+<summary>Exemplo código</summary>
 
 ```php
 quantidadeNumero <- 0
@@ -168,7 +172,7 @@ repita
 ate (numero = 0)
 escreva (total/(quantidadeNumero-1))
 ```
-
+</details >
 <div style="page-break-after: always;"></div>
 
 
@@ -188,7 +192,8 @@ Essa estrutura de repetição é utilizada quando se sabe a quantidade de vezes 
 
 1. Ler um número e exibir a tabuada de multiplicação desse número
 
-<div style="page-break-after: always;"></div>
+<details open>
+<summary>Exemplo de código</summary>
 
 ```php
 Algoritmo "tabuada"
@@ -202,6 +207,7 @@ para contador de 1 ate 10 faca
 fimpara
 Fimalgoritmo
 ```
+</details>
 
 <div style="page-break-after: always;"></div>
 
@@ -261,3 +267,5 @@ para contadorLinha de 0 ate 10 faca
      escreval()
 fimpara
 ```
+
+
