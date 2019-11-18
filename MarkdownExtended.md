@@ -301,3 +301,14 @@ $$ A = a \times b $$ (3.2)
 | Table: Move Columns Right     | [[Alt+→]]|
 
 
+
+```plantuml
+@startuml
+interface List
+
+List <|.. LinkedList
+List <|.. ArrayList
+List <|.. Vector
+
+@enduml
+```
