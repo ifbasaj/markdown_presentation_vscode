@@ -6,5 +6,7 @@
        //".vscode/styles.css"
     ],
     "emmet.includeLanguages": {"markdown"},
+    "markdownExtended.exportOutDirName": "",
+    "markdownExtended.imageOmitBackground": true,
     "plantuml.server": "https://www.plantuml.com/plantuml"
 }

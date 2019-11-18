@@ -109,17 +109,13 @@ Há ainda outros métodos, como remove() que recebe um objeto que se deseja remo
 
 A interface List e algumas classes que a implementam podem ser vistas no diagrama a seguir:
 
-```mermaid
-classDiagram
-class List{
-    <<interface>>
-}
+```plantuml
+@startuml
+interface List
 
-class LinkedList
-class ArrayList
-class Vector
+List <|.. LinkedList
+List <|.. ArrayList
+List <|.. Vector
 
-List <|.. LinkedList : implements
-List <|-- ArrayList : implements
-List <|-- Vector : implements
+@enduml
 ```
