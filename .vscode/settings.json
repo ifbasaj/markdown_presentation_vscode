@@ -3,7 +3,7 @@
     "markdownExtended.pdfHeaderTemplate": "<div style=\"font-size: 9px; margin-left: 1cm;\"> <span class='title'></span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; \"> <span class='date'></span></div>",
     "markdownExtended.pdfFooterTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
     "markdown.styles": [
-       //".vscode/styles.css"
+       ".vscode/styles.css"
     ],
     "emmet.includeLanguages": {"markdown"},
     "markdownExtended.exportOutDirName": "",

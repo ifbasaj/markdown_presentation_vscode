@@ -102,9 +102,9 @@ subgraph verificando numero par terceira vez
 end
 
 classDef orange fill:#f96,stroke:#333,stroke-width:2px;
-class D,D1 orange
+class D,D1,D2 orange
 classDef black fill:#000;
-class G,G1 black
+class G,G1,G2 black
 ```
 </details>
 <div style="page-break-after: always;"></div>
