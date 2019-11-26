@@ -8360,5 +8360,41 @@ a.text-dark:focus, a.text-dark:hover {
     visibility: hidden!important
 }
 
-
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+.h1, h1 {
+    font-size: 5rem;
+}
+
+.h2, h2 {
+    font-size: 4rem;
+}
+
+.h3, h3 {
+    font-size: 3rem;
+}
+
+li, p, .li, .p {
+    font-size: 2rem;
+}
+
+body {
+    counter-reset: figures;
+  }
+
+figure {
+	counter-increment: figures;
+}
+
+figure figcaption:before {
+	content: 'Fig. ' counter(figures) ' - ';
+}
+
+code {
+    counter-reset: line;
+}
+
+pre {
+    counter-increment: line;
+    content: counter(line);
+}

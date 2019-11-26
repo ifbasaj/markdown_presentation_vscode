@@ -137,7 +137,7 @@ Aenean euismod bibendum laoreet.
 ## Español Título
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Aenean euismod bibendum laoreet.
+Aenean euismod bibendum laoreet
 
 
 
@@ -183,9 +183,12 @@ warning text
 ::: col
 
 <p align="center">
-    <img src="https://i.stack.imgur.com/onsOR.jpg"/><br/>
-    <b>Figura 1</b>  the new keyboard..wonder if it's good
+    <figure>
+    <img src="https://i.stack.imgur.com/onsOR.jpg"/>
+    <figcaption> the new keyboard..wonder if it's good</figcaption>
+    </figure>
 </p>
+
 :::
 :::  col
 <div style="zoom:50%">
@@ -234,8 +237,10 @@ class G black
 
 
 <p align="center">
-    <img src="https://i.stack.imgur.com/onsOR.jpg"/><br/>
-    <b>Figura 1</b>  the new keyboard..wonder if it's good
+    <figure>
+    <img src="https://i.stack.imgur.com/onsOR.jpg"/>
+    <figcaption> the new keyboard..wonder if it's good</figcaption>
+    </figure>
 </p>
 
 ---  
@@ -270,10 +275,23 @@ class G black
 ```
 
 </details> 
+
 $$ A = a \times b $$ (1)
 
 $$ A = a \times b $$ (3.2)
 
+
+Format: **Toggle Bold**
+
+Format: *Toggle Italics*
+
+Format: _Toggle Underline_
+
+Format: ==Toggle Mark==
+
+Format: ~~Toggle Strikethrough~~
+
+Format: `Toggle Code Inline`
 
 | Command                       | Keyboard Shortcut          |
 | ----------------------------- | -------------------------- |
@@ -303,6 +321,17 @@ $$ A = a \times b $$ (3.2)
 
 
 ```plantuml
+@startuml
+interface List
+
+List <|.. LinkedList
+List <|.. ArrayList
+List <|.. Vector
+
+@enduml
+```
+
+```{.line-numbers}
 @startuml
 interface List
 
