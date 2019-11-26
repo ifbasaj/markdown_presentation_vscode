@@ -485,10 +485,155 @@ Seguindo a regra de ordenação, o atual valor de A[1] deverá ser comparado com
 |         Matriz A         ||
 | Índice i | Elemento: A[i] |
 | :------: | :------------: |
-|  **1**   |     **8**      |
+|  **1**   |     **7**      |
 |    2     |       9        |
-|  **3**   |     **7**      |
+|  **3**   |     **8**      |
 |    4     |       5        |
 |    5     |       3        |
 
 <div style="page-break-after: always;"></div>
+
+Agora deverão ser comparados os valores dos elementos armazenados nas posições A[1] e A[4]. O valor
+do elemento 7 de A[1] é maior que o valor do elemento 5 de A[4]. Eles são trocados, passando A[1] a
+possuir o elemento 5 e A[4] a possuir o elemento 7. A matriz para a ter a seguinte formação:
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|  **1**   |     **5**      |
+|    2     |       9        |
+|    3     |       8        |
+|  **4**   |     **7**      |
+|    5     |       3        |
+
+<div style="page-break-after: always;"></div>
+
+Observe que ate aqui os elementos comparados foram sendo trocados de posição, estando agora em A[1] o elemento de valor 5 e que será mudado mais uma vez por ser maior que o valor do elemento 3 armazenado em A[5]. Desta forma, a matriz passa a ter a seguinte formação:
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|  **1**   |     **3**      |
+|    2     |       9        |
+|    3     |       8        |
+|    4     |       7        |
+|  **5**   |     **5**      |
+
+<div style="page-break-after: always;"></div>
+
+A partir deste ponto o elemento de valor 3 armazenado em A[1] não necessitará mais ser comparado. Assim sendo, deverá ser pego o atual valor do elemento da posição A[2] e ser comparado sucessivamente com todos os outros elementos restantes. Desta forma, queremos dizer que o valor do elemento armazenado em A[2] deverá ser comparado com os elementos armazenados em A[3], A[4] e A[5], segundo a regra da aplicação de propriedade distributiva. Comparando o valor do elemento 9 da posição A[2] com o elemento 8 da posição A[3] e efetuando a troca de forma que 8 esteja em A[2] e 9 esteja em A[3], a matriz passa a ter a seguinte formação:
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|    1     |       3        |
+|  **2**   |     **8**      |
+|  **3**   |     **9**      |
+|    4     |       7        |
+|    5     |       5        |
+
+<div style="page-break-after: always;"></div>
+
+Em seguida o atual valor do elemento de A[2] deve ser comparado com o valor do elemento de A[4]. 8 é maior que 8 e são trocado, ficando A[2] com 7 e A[4] com 8. Desta forma, a matriz passa a ter a seguinte formação:
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|    1     |       3        |
+|  **2**   |     **7**      |
+|    3     |       9        |
+|  **4**   |     **8**      |
+|    5     |       5        |
+
+<div style="page-break-after: always;"></div>
+
+Será então dado continuidade a processo de comparação e troca. O atual valor do elemento na posição A[2] é 7 e será comparado com o valor do elemento A[5] que é 5. São estes trocados, passando A[2] ficar com o elemento 5 e A[5] ficar com o elemento 7, conforme indicado no esquema abaixo:
+
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|    1     |       3        |
+|  **2**   |     **5**      |
+|    3     |       9        |
+|    4     |       8        |
+|  **5**   |     **7**      |
+
+<div style="page-break-after: always;"></div>
+
+Note que até este ponto a posição A[2] foi comparada com todas as posições subseqüentes a ela, não
+tendo mais nenhuma comparação para ela. Agora será efetuada a comparação da próxima posição com o
+restante. No caso, de A[3] com A[4] e A[5]. Sendo assim, o valor do elemento da posição A[3] será
+comparado com o valor da posição A[4]. Como 9 é maior que 8 eles serão trocados:
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|    1     |       3        |
+|    2     |       5        |
+|  **3**   |     **8**      |
+|  **4**   |     **9**      |
+|    5     |       7        |
+
+<div style="page-break-after: always;"></div>
+
+A seguir, será comparado o valor do elemento da posição A[3] com o valor do elemento da posição A[5]. Sendo o primeiro maior que o segundo, ocorre a troca. Desta forma A[3] passa a possuir o elemento 7 e A[5] passa a possuir o elemento 8, como indicado em seguida:
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|    1     |       3        |
+|    2     |       5        |
+|  **3**   |     **7**      |
+|    4     |       9        |
+|  **5**   |     **8**      |
+
+<div style="page-break-after: always;"></div>
+
+Tendo sido efetuadas todas as comparações de A[3] com A[4] e A[5], fica somente a última comparação que é A[4] com A[5], cujos valores são trocados, passando A[4] possuir o elemento de valor 8 e A[5] possuir o elemento de valor 9, como mostrado em seguida:
+
+|         Matriz A         ||
+| Índice i | Elemento: A[i] |
+| :------: | :------------: |
+|    1     |       3        |
+|    2     |       5        |
+|    3     |       7        |
+|  **4**   |     **8**      |
+|  **5**   |     **9**      |
+
+<div style="page-break-after: always;"></div>
+
+Desta forma, pode-se notar que a referida ordenação foi executada, apresentando os elementos da matriz em ordem crescente.
+
+Para dados do tipo literal o processo é o mesmo, uma vez que cada letra possui um valor diferente da outra. A letra “A”, por exemplo, tem valor menor que a letra “B”, e assim por diante. Se a letra “A” maiúscula for comparada com a letra “a” minúscula, terão valores diferentes. Cada caractere é guardado dentro da memória de um computados segundo o valor de uma código, que recebe o nome de ASCII (American Standard Code for Information Interchange – Código Americano Padrão para Troca de Informações). E é com base nesta tabela que o processo de ordenação trabalha, pois cada caractere tem um peso, um valor previamente determinado, segundo este padrão.
+
+
+Diagrama de Blocos
+
+A seguir são apresentados o diagrama de blocos da entrada, processamento de ordenação e apresentação dos nomes ordenados. Atente para dois pontos:
+
+
+O primeiro a ser observado é a utilização de uma segunda variável para controlar o índice subseqüente no processo de ordenação, no caso a variável “j”. Observe que a variável i é iniciada pela instrução para como: i de 1, e no segundo pela instrução para que está sendo encadeada a primeira e iniciando a variável j, como: j de i+1. Isto implica na seguinte seqüência:
+
+ 
+| Quando i for |                                                            j será |
+| :----------- | ----------------------------------------------------------------: |
+| 1            | 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 2            |    3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 3            |       4, 5, 6, 7, 8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 4            |          5, 6, 7, 8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 5            |             6, 7, 8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 6            |                7, 8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 7            |                   8, 9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 8            |                      9, 10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 9            |                         10, 11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 10           |                             11,12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 11           |                                12, 13, 14, 15, 16, 17, 18, 19, 20 |
+| 12           |                                    13, 14, 15, 16, 17, 18, 19, 20 |
+| 13           |                                        14, 15, 16, 17, 18, 19, 20 |
+| 14           |                                            15, 16, 17, 18, 19, 20 |
+| 15           |                                                16, 17, 18, 19, 20 |
+| 16           |                                                    17, 18, 19, 20 |
+| 17           |                                                        18, 19, 20 |
+| 18           |                                                            19, 20 |
+| 19           |                                                                20 |
