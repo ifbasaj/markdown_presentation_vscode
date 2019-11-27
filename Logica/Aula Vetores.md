@@ -637,3 +637,29 @@ O primeiro a ser observado é a utilização de uma segunda variável para contr
 | 17           |                                                        18, 19, 20 |
 | 18           |                                                            19, 20 |
 | 19           |                                                                20 |
+
+
+```
+Algoritmo "matrizD2"
+Var
+   A: vetor [1..3,1..3] de inteiro
+   cont, cont2,aux:inteiro
+   
+Inicio
+
+aux<-1
+para cont de 1 ate 3 faca
+   para cont2 de 1 ate 3 faca
+        A[cont,cont2]<-aux
+        aux<-aux+1
+   fimpara
+fimpara
+
+para cont de 1 ate 3 faca
+   para cont2 de 1 ate 3 faca
+        Escreva (A[cont,cont2])
+   fimpara
+   Escreval
+fimpara
+Fimalgoritmo
+```
