@@ -120,7 +120,7 @@ List <|.. Vector
 
 @enduml
 ```
-*Simplificação do diagrama de classes da interface List*{class="figcaption"}
+*Simplificação do diagrama de classes da interface List [^1]*{class="figcaption"}
 :::table-responsive
 
 | Nome       |      Tipo       |
@@ -132,3 +132,5 @@ List <|.. Vector
 [Classificação dos elementos da Figura 1]
 
 :::
+
+[^1]: https://www.caelum.com.br/
