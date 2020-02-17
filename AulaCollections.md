@@ -16,7 +16,7 @@ puppeteer:
 ---
 
 
-Java Collections{style="font-size: 2pc;margin-top: 8em;margin-left: auto;margin-right: auto; width: 20em;text-align: center;"}
+Java Collections{style="font-size: 5rem; margin-top: 4em;margin-left: auto;margin-right: auto; width: 10em;text-align: center;"}
 
 <div style="page-break-after: always;"></div>
 
@@ -109,6 +109,7 @@ Há ainda outros métodos, como remove() que recebe um objeto que se deseja remo
 
 A interface List e algumas classes que a implementam podem ser vistas no diagrama a seguir:
 
+
 ```plantuml
 @startuml
 interface List
@@ -119,3 +120,15 @@ List <|.. Vector
 
 @enduml
 ```
+*Simplificação do diagrama de classes da interface List*{class="figcaption"}
+:::table-responsive
+
+| Nome       |      Tipo       |
+| ---------- | :-------------: |
+| List       |    Interface    |
+| LinkedList | Classe Concreta |
+| ArrayList  | Classe Concreta |
+| Vector     | Classe Concreta |
+[Classificação dos elementos da Figura 1]
+
+:::

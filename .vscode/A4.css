@@ -1,0 +1,58 @@
+tr:nth-child(even) {
+    background: #f8f8f8;
+    border-top: 1px solid #ccc
+}
+
+tr:nth-child(odd) {
+    background: #FFF;
+    border-top: 1px solid #ccc
+}
+
+body {
+    counter-reset: figures;
+  }
+
+img {
+	counter-increment: figures;
+}
+
+em.figcaption {
+    font-style: normal;
+    font-weight: bold;
+    display: inherit;
+    text-align: center;
+    font-size: 90%;
+}
+em.figcaption:before {
+    content: 'Figura ' counter(figures) ' - ';
+}
+
+table {
+	counter-increment: tables;
+}
+
+table > caption {
+    font-style: normal;
+    font-weight: bold;
+    caption-side: top;
+    text-align: center;
+    font-size: 90%;
+    background: none;
+    border-bottom: none;
+    color: #172b4d;
+}
+
+table > caption:before {
+    content: 'Tabela ' counter(tables) ' - ';
+}
+
+
+code {
+    counter-reset: line;
+}
+
+pre > code > div
+ {
+    counter-increment: line;
+    content: counter(line);
+}

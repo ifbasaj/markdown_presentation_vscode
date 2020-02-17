@@ -1,0 +1,22 @@
+
+.h1, h1 {
+    font-size: 5rem;
+}
+
+.h2, h2 {
+    font-size: 4rem;
+}
+
+.h3, h3 {
+    font-size: 3rem;
+}
+
+table, li, p, .li, .p, pre {
+    font-size: 2rem;
+}
+img{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
