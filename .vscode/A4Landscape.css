@@ -1,22 +1,44 @@
+.titulo {
+    font-size: 5rem;
+    margin-top: 4em !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    text-align: center;
+}
 
-.h1, h1 {
+.h1,
+h1 {
     font-size: 5rem;
 }
 
-.h2, h2 {
+.h2,
+h2 {
     font-size: 4rem;
 }
 
-.h3, h3 {
+.h3,
+h3 {
     font-size: 3rem;
 }
 
-table, li, p, .li, .p, pre {
+table,
+li,
+p,
+.li,
+.p,
+pre {
     font-size: 2rem;
 }
-img{
-    width: 70%;
+
+img {
+    width: 100%;
     margin: auto;
     display: block;
 }
 
+.img70 {
+    width: 70%;
+    margin: auto;
+    display: block;
+}

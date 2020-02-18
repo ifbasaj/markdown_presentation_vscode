@@ -16,7 +16,7 @@ puppeteer:
 ---
 
 
-Java Collections{style="font-size: 5rem; margin-top: 4em;margin-left: auto;margin-right: auto; width: 10em;text-align: center;"}
+Java Collections{class="titulo"}
 
 <div style="page-break-after: always;"></div>
 
@@ -108,7 +108,7 @@ for (int i = 0; i < contas.size(); i++) {
 Há ainda outros métodos, como remove() que recebe um objeto que se deseja remover da lista; e contains(), que recebe um objeto como argumento e devolve true ou false, indicando se o elemento está ou não na lista.
 
 A interface List e algumas classes que a implementam podem ser vistas no diagrama a seguir:
-
+:::img70
 
 ```plantuml
 @startuml
@@ -120,7 +120,11 @@ List <|.. Vector
 
 @enduml
 ```
+:::
 *Simplificação do diagrama de classes da interface List [^1]*{class="figcaption"}
+
+<div style="page-break-after: always;"></div>
+
 :::table-responsive
 
 | Nome       |      Tipo       |
@@ -133,4 +137,9 @@ List <|.. Vector
 
 :::
 
-[^1]: https://www.caelum.com.br/
+
+<div style="page-break-after: always;"></div>
+
+## Referências
+
+[^1]: CAELUM Escola de Tecnologia. [S. l.], 17 fev. 2020. Disponível em: https://www.caelum.com.br. Acesso em: 17 fev. 2020.
