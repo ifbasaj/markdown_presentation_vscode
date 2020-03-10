@@ -15,6 +15,8 @@ puppeteer:
         fullPage: true
 ---
 
+
+
 ::::: container-fluid
 :::: row align-items-center
 ::: col
@@ -49,6 +51,41 @@ digraph G {
 
 ```
 
+:::
+::::
+:::::
+
+<div style="page-break-after: always;"></div>
+
+::::: container-fluid
+:::: row align-items-center
+::: col
+
+
+```java
+class Programa {
+    public static void main(String[] args) {
+        Conta c1 = null;        
+    }
+}
+```
+:::
+:::  col col-lg-4
+
+```graphviz
+digraph G {
+    graph [
+        rankdir = "LR"
+    ];
+    node [
+        fontsize = "16"
+        shape = "ellipse"
+    ];
+    edge [];
+    c1->null;
+}
+
+```
 :::
 ::::
 :::::
@@ -445,7 +482,7 @@ class Programa {
         Cliente cli1 = new Cliente();
         c1.titular = cli1;
         Conta c2 = new Conta();
-        c2.titular = cli1;
+        c2.titular = cli1;        
     }
 }
 ```
@@ -553,6 +590,111 @@ subgraph cluster_A {
     cobj2:cobj2t->cliobj1;
 }
 
+```
+:::
+::::
+:::::
+
+
+<div style="page-break-after: always;"></div>
+
+
+```java
+
+class Programa {
+    public static void main(String[] args) {
+        Conta c1 = new Conta();
+        Cliente cli1 = new Cliente();
+        c1.titular = cli1;
+        Conta c2 = new Conta();
+        c2.titular = cli1;
+        cli1.nome = "Leandro";
+        c1.deposita(1000);
+        c2.deposita(500);
+        c1.transfere(200, c2);
+    }
+}
+
+ class Conta {
+	private int numero;
+	private Cliente cliente;
+	private double saldo;	
+
+	public void deposita(double valor) {
+		saldo = saldo + valor;
+	}
+	
+	public boolean saca(double valor) {
+		if (valor <= saldo) {
+			saldo = saldo - valor;
+			return true;
+		}
+		return false;
+	}
+
+	public boolean transfere(Conta destino, double valorTransferencia) {
+		if (saca(valorTransferencia)) {
+			destino.deposita(valorTransferencia);
+			return true;
+		}
+		return false;
+	}
+	
+  
+}
+```
+::::: container-fluid
+:::: row align-items-center
+::: col
+
+```plantuml
+Programa->c1 :"deposita(1000)"
+Programa->c2 :"deposita(500)"
+Programa->c1 :"transfere(c2,200)"
+c1->c1 :"saca(200)"
+c1->c2 :"deposita(200)"
+
+```
+:::
+:::  col col-lg-6
+
+```graphviz
+digraph G {
+    graph [
+        rankdir = "LR"
+    ];
+    node [
+        fontsize = "16"
+        shape = "ellipse"
+    ];
+    edge [];
+
+    cli1;
+    
+    c1;
+subgraph cluster_A {
+    style = rounded;
+    label = "Memoria";
+    cliobj1 [
+        label = "{  {nome|cpf} | {Leandro|}}"
+        shape = "record"
+    ];
+    cobj1 [
+        label = "{  {numero|titular|saldo} | {|<cobj1t>|800}}"
+        shape = "record"
+    ];
+    cobj2 [
+        label = "{  {numero|titular|saldo} | {|<cobj2t>|700}}"
+        shape = "record"
+    ];
+}
+    c1->cobj1;
+    cli1->cliobj1;
+    cobj1:cobj1t->cliobj1;
+    c2->cobj2;
+    cobj2:cobj2t->cliobj1;
+    
+}
 ```
 :::
 ::::
