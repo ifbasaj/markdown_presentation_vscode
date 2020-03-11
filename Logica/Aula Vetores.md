@@ -1,18 +1,17 @@
 ---
-title: Repetições 
+title: Vetores 
 puppeteer:
     pdf:
         format: A4
         displayHeaderFooter: true
+        headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm;\"> </div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; \"> <span class='date'></span></div>"
         margin:
             top: 2cm
             right: 2cm
             bottom: 2cm
             left: 2cm
-        landscape: true
-    image:
-        quality: 90
-        fullPage: true
+        landscape: false
+
 ---
 [[TOC]]
 
@@ -130,6 +129,114 @@ stop
 @enduml
 ```
 
+
+```graphviz
+digraph finite_state_machine {
+    layout=fdp
+    
+    node [style=filled];
+    node [shape=box color=black style="filled,rounded" fillcolor=khaki ];
+    p1 [pos="0,0!" label="Soma<-0" ]
+    p2 [pos="0,-2!" label="leia MD[i]"]
+    p3 [pos="0,-3!" label="Soma<-Soma+MD[i]"]
+    p4 [pos="0,-4!" label="Media<-Soma/8"]
+    p5 [pos="0,-5!" label="Escreva Media"]
+    node [shape = hexagon fillcolor=yellow1  style=filled pos="0,-1!" label="i<-1,8,1"] l1;
+    node [shape = point, label="", height=0, width=0]
+    pp1 [pos="1.5,-3!"]
+    pp2 [pos="1.5,-1!"]
+    pp3 [pos="-1.5,-1!"]
+    pp4 [pos="-1.5,-4!"]
+    
+    p1->l1;
+    l1->p2;
+    p2->p3;
+    p3->pp1->pp2 [arrowhead=none]
+    pp2->l1 
+    l1->pp3->pp4 [arrowhead=none]
+    pp4->p4 
+    p4->p5 
+
+}
+```
+- [constraint=false]
+- "{rank=same; l1->pp3}"
+- [ style="invis"]
+
+```graphviz
+digraph finite_state_machine {
+    
+    
+    node [style=filled];
+    node [shape=box color=black style="filled,rounded" fillcolor=khaki ];
+    p1 [ label="Soma<-0" ]
+    p2 [ label="leia MD[i]"]
+    p3 [ label="Soma<-Soma+MD[i]"]
+    p4 [ label="Media<-Soma/8"]
+    p5 [ label="Escreva Media"]
+    node [shape = hexagon fillcolor=yellow1  style=filled  label="i<-1,8,1"] l1;
+
+    node[ shape = point, width=0, height=0] pp1 pp2 pp3 pp4 pp5 pp6 pp7 pp8;
+
+    
+    
+    p1->l1;
+    l1->p2;
+    p2->p3;
+    {rank=same;p3->pp1 [arrowhead=none constraint=false]}
+    {rank=same;pp1->pp2 [arrowhead=none constraint=false]}
+    {rank=same;pp3->l1 [ constraint=false]}
+    {rank=same;pp3->pp4 [arrowhead=none]}
+    pp2->pp4[arrowhead=none];
+
+    p3->p4[ style="invis"];
+    
+    
+
+    p4->p5
+    
+    
+    
+
+}
+```
+
+```graphviz
+digraph g1 {
+
+  graph [splines=false];
+
+  // invisible nodes
+  node[ shape = point, width=0, height=0] ;
+  i1 [ style="invis"];
+  i2 [ style="invis"];
+  i3 [ style="invis"];
+  i4 [ style="invis"];
+
+  node[fontsize=15, color = black, shape = box, width=3, height=1] ;
+  a[color=blue, label="a"];
+  b[color=green, label="b"];
+  c[color=orange, label="c"]; 
+  d[color=red, label="d"] ;       
+
+  {rank=same; a -> b -> c};
+
+  c -> i1[arrowhead=none];
+  i1 -> d[label="  FOR EACH\n\n"]; 
+  d -> i2[arrowhead=none];
+
+  {rank=same; i3 -> i2[arrowhead=none, minlen = 7 ] };
+
+  b -> i4[style="invis"];
+  i4 -> i3[arrowhead=none];
+
+  {rank=same; i4 -> i1};
+
+}
+
+```
+
+
 </details>
 
 <details open>
@@ -208,7 +315,7 @@ stop
 <summary>Português Estruturado</summary>
 
 
-```
+```C
 algoritmo "Media_turma"
 var
     MD: vetor[1..8] de real
