@@ -42,3 +42,39 @@ img {
     margin: auto;
     display: block;
 }
+
+.z10 {
+    zoom: 10%;
+}
+
+.z20 {
+    zoom: 20%;
+}
+
+.z30 {
+    zoom: 30%;
+}
+
+.z40 {
+    zoom: 40%;
+}
+
+.z50 {
+    zoom: 50%;
+}
+
+.z60 {
+    zoom: 60%;
+}
+
+.z70 {
+    zoom: 70%;
+}
+
+.z80 {
+    zoom: 80%;
+}
+
+.z90 {
+    zoom: 90%;
+}

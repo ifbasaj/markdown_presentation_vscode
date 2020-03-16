@@ -166,21 +166,21 @@ item **bold red**{style="color:red"}
 [[Ctrl+Esc]]
 
 
-::::: container
+::::: container-fluid
 :::: row
-::: col-xs-6 alert alert-success
+::: col-6 alert alert-success
 success text
 :::
-::: col-xs-6 alert alert-warning
+::: col-6 alert alert-warning
 warning text
 :::
 ::::
 :::::
 
 
-::::: container
+::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-6
 
 <p align="center">
     <figure>
@@ -190,8 +190,8 @@ warning text
 </p>
 
 :::
-:::  col
-<div style="zoom:50%">
+:::  col-6 z50
+
 
 ```mermaid
 graph TD
@@ -213,7 +213,7 @@ class D orange
 classDef black fill:#000;
 class G black
 ```
-</div>
+
 :::
 ::::
 :::::

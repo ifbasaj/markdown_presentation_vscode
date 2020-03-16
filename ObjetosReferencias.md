@@ -15,11 +15,13 @@ puppeteer:
         fullPage: true
 ---
 
+Objetos e referências em Java{class="titulo"}
 
+<div style="page-break-after: always;"></div>
 
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-8
 
 ```java
 class Conta {
@@ -30,9 +32,11 @@ class Conta {
 ```
 
 :::
-:::  col col-lg-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -43,12 +47,12 @@ digraph G {
     ];
     edge [];
     obj1 [
-        label = "{  {numero|titular|saldo} | {||}}"
+        label = "{  {numero|titular|saldo} | {|&#92; &#92; &#92; &#92; &#92; &#92; &#92; &#92; &#92; &#92; &#92; &#92; &#92; |}}"
         shape = "record"
     ];
     
 }
-
+@enduml
 ```
 
 :::
@@ -59,7 +63,7 @@ digraph G {
 
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-8
 
 
 ```java
@@ -70,9 +74,11 @@ class Programa {
 }
 ```
 :::
-:::  col col-lg-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -84,17 +90,18 @@ digraph G {
     edge [];
     c1->null;
 }
-
+@enduml
 ```
 :::
 ::::
 :::::
 
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-8
 
 
 ```java
@@ -106,9 +113,11 @@ class Programa {
 }
 ```
 :::
-:::  col col-lg-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -130,17 +139,18 @@ digraph G {
     
     c1->obj1
 }
-
+@enduml
 ```
 :::
 ::::
 :::::
 
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-8
 
 ```java
 class Programa {
@@ -151,9 +161,11 @@ class Programa {
 }
 ```
 :::
-:::  col col-lg-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -181,17 +193,19 @@ digraph G {
     c1->obj1
     c2->obj2
 }
-
+@enduml
 ```
 :::
 ::::
 :::::
 
+
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-8
 
 ```java
 class Programa {
@@ -203,9 +217,11 @@ class Programa {
 }
 ```
 :::
-:::  col col-lg-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -230,20 +246,22 @@ digraph G {
             shape = "record"
         ];
     }    
-    c1->obj1
-    c2->obj1
+    c1->obj1:w
+    c2->obj1:w
 }
-
+@enduml
 ```
 :::
 ::::
 :::::
 
+
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-8
 
 
 ```java
@@ -257,9 +275,11 @@ class Programa {
 }
 ```
 :::
-:::  col col-lg-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -279,21 +299,22 @@ digraph G {
             shape = "record"
         ];
     }    
-    c1->obj1
-    c2->obj1
+    c1->obj1:w
+    c2->obj1:w
 }
-
+@enduml
 ```
 
 :::
 ::::
 :::::
 
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-8 z90
 
 ```java
 class Conta {
@@ -313,9 +334,11 @@ class Programa {
 }
 ```
 :::
-:::  col col-lg-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -345,18 +368,20 @@ digraph G {
     c1->cobj1
     cli1->cliobj1
 }
-
+@enduml
 ```
 :::
 ::::
 :::::
 
 
+
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
-:::: row align-items-center row-no-gutters
-::: col-xs-12 col-md-8
+:::: row align-items-center
+::: col-8
 
 ```java
 class Programa {
@@ -368,9 +393,11 @@ class Programa {
 }
 ```
 :::
-:::  col-xs-6 col-md-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -398,20 +425,22 @@ subgraph cluster_A {
 }
     c1->cobj1;
     cli1->cliobj1;
-    cobj1:cobj1t->cliobj1;
+    cobj1:cobj1t:n->cliobj1:w;
 }
-
+@enduml
 ```
 
 :::
 ::::
 :::::
 
+
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
-:::: row align-items-center row-no-gutters
-::: col-xs-12 col-md-8
+:::: row align-items-center
+::: col-8
 
 ```java
 class Programa {
@@ -424,9 +453,11 @@ class Programa {
 }
 ```
 :::
-:::  col-xs-6 col-md-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -458,22 +489,24 @@ subgraph cluster_A {
 }
     c1->cobj1;
     cli1->cliobj1;
-    cobj1:cobj1t->cliobj1;
+    cobj1:cobj1t:n->cliobj1:w;
     c2->cobj2;
     
 }
-
+@enduml
 ```
 
 :::
 ::::
 :::::
 
+
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
-:::: row align-items-center row-no-gutters
-::: col-xs-12 col-md-8
+:::: row align-items-center
+::: col-8
 
 ```java
 class Programa {
@@ -487,9 +520,11 @@ class Programa {
 }
 ```
 :::
-:::  col-xs-6 col-md-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -521,22 +556,24 @@ subgraph cluster_A {
 }
     c1->cobj1;
     cli1->cliobj1;
-    cobj1:cobj1t->cliobj1;
+    cobj1:cobj1t:n->cliobj1:w;
     c2->cobj2;
-    cobj2:cobj2t->cliobj1;
+    cobj2:cobj2t:n->cliobj1:w;
 }
-
+@enduml
 ```
 
 :::
 ::::
 :::::
 
+
+
 <div style="page-break-after: always;"></div>
 
 ::::: container-fluid
-:::: row align-items-center row-no-gutters
-::: col-xs-12 col-md-8
+:::: row align-items-center
+::: col-8
 
 ```java
 class Programa {
@@ -551,9 +588,11 @@ class Programa {
 }
 ```
 :::
-:::  col-xs-6 col-md-4
+:::  col-4
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -585,22 +624,21 @@ subgraph cluster_A {
 }
     c1->cobj1;
     cli1->cliobj1;
-    cobj1:cobj1t->cliobj1;
+    cobj1:cobj1t:n->cliobj1:w;
     c2->cobj2;
-    cobj2:cobj2t->cliobj1;
+    cobj2:cobj2t:n->cliobj1:w;
 }
-
+@enduml
 ```
 :::
 ::::
 :::::
 
-
 <div style="page-break-after: always;"></div>
 
+::: z70
 
 ```java
-
 class Programa {
     public static void main(String[] args) {
         Conta c1 = new Conta();
@@ -622,8 +660,7 @@ class Programa {
 
 	public void deposita(double valor) {
 		saldo = saldo + valor;
-	}
-	
+	}	
 	public boolean saca(double valor) {
 		if (valor <= saldo) {
 			saldo = saldo - valor;
@@ -631,7 +668,6 @@ class Programa {
 		}
 		return false;
 	}
-
 	public boolean transfere(Conta destino, double valorTransferencia) {
 		if (saca(valorTransferencia)) {
 			destino.deposita(valorTransferencia);
@@ -639,13 +675,16 @@ class Programa {
 		}
 		return false;
 	}
-	
-  
 }
 ```
+
+:::
+
+<div style="page-break-after: always;"></div>
+
 ::::: container-fluid
 :::: row align-items-center
-::: col
+::: col-6
 
 ```plantuml
 Programa->c1 :"deposita(1000)"
@@ -656,9 +695,11 @@ c1->c2 :"deposita(200)"
 
 ```
 :::
-:::  col col-lg-6
+:::  col-6
 
-```graphviz
+```plantuml
+@startuml
+
 digraph G {
     graph [
         rankdir = "LR"
@@ -690,12 +731,14 @@ subgraph cluster_A {
 }
     c1->cobj1;
     cli1->cliobj1;
-    cobj1:cobj1t->cliobj1;
+    cobj1:cobj1t:n->cliobj1:w;
     c2->cobj2;
-    cobj2:cobj2t->cliobj1;
+    cobj2:cobj2t:n->cliobj1:w;
     
 }
+@enduml
 ```
 :::
 ::::
 :::::
+
